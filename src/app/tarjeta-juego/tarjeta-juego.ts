@@ -10,10 +10,10 @@ import { CommonModule } from '@angular/common';
 })
 export class TarjetaJuegoComponent {
 
-  // ESTUDIANTE 3 → INPUT
+  // INPUT
   @Input() juego: any;
 
-  // ESTUDIANTE 4 → OUTPUT
+  // OUTPUT
   @Output() destacar = new EventEmitter<string>();
 
   destacarJuego() {

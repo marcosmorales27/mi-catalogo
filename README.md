@@ -1,59 +1,114 @@
-# MiCatalogo
+# RetroGames - Catálogo de Videojuegos
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.11.
+Mini aplicación desarrollada en Angular.
 
-## Development server
+## Funcionalidades implementadas
 
-To start a local development server, run:
+* Catálogo de videojuegos
+* Diseño visual con tarjetas
+* Evento click en botones
+* Actualización dinámica de información
+* Comunicación entre componentes
 
-```bash
+## Comunicación entre componentes
+
+### Padre → Hijo (@Input)
+
+El componente padre envía información del videojuego al componente hijo mediante @Input.
+
+### Hijo → Padre (@Output)
+
+El componente hijo envía eventos al padre mediante @Output y EventEmitter.
+
+---
+
+# Requisitos
+
+Tener instalado:
+
+* Node.js
+* npm
+* Angular CLI
+
+Verificar instalación:
+
+bash
+node -v
+npm -v
+ng version
+
+
+---
+
+# Instalación
+
+Entrar a la carpeta del proyecto:
+
+bash
+cd mi-catalogo
+
+
+Instalar dependencias:
+
+bash
+npm install
+
+
+---
+
+# Ejecutar el proyecto
+
+Iniciar servidor de desarrollo:
+
+bash
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+o:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+bash
+npx ng serve
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+# Abrir en navegador
 
-## Building
+text
+http://localhost:4200
 
-To build the project run:
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+# Estructura principal
 
-## Running unit tests
+text
+src/app/
+│
+├── app.ts
+├── app.html
+├── app.css
+│
+├── tarjeta-juego/
+│   ├── tarjeta-juego.ts
+│   ├── tarjeta-juego.html
+│   └── tarjeta-juego.css
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+# Tecnologías utilizadas
 
-For end-to-end (e2e) testing, run:
+* Angular
+* TypeScript
+* HTML
+* CSS
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# Integrantes
+* Josue  → Investigación teórica sobre componentes y arquitectura en Angular.
+* Josue  → Diseño visual y estructura
+* Marcos Morales → Comunicación padre → hijo (@Input)
+* Marcos Morales → Comunicación hijo → padre (@Output)
+* Estudiante 5 → Pruebas y documentación

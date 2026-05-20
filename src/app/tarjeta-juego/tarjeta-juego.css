@@ -1,0 +1,30 @@
+.tarjeta-juego {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.tarjeta-juego:hover {
+  transform: translateY(-8px);
+}
+
+.tarjeta-juego h3 {
+  color: white;
+}
+
+.tarjeta-juego p {
+  color: #94a3b8;
+}
+
+button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}

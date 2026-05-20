@@ -23,10 +23,11 @@ npm install
 # Ejecutar el proyecto
 
 Iniciar servidor de desarrollo:
-bash
+
 ng serve
+
 o:
-bash
+
 npx ng serve
 
 ---
